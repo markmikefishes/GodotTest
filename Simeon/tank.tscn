@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://oxpir8w37d2r"]
+
+[ext_resource type="Texture2D" uid="uid://b8icor63yuk6m" path="res://Simeon/Art/tank.png" id="1_iqj1v"]
+[ext_resource type="Script" path="res://Simeon/tank.gd" id="2_xcc00"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wdjm4"]
+size = Vector2(320, 200)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+motion_mode = 1
+script = ExtResource("2_xcc00")
+SPEED = 300
+TURN_SPEED = 1.0
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("1_iqj1v")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("RectangleShape2D_wdjm4")
