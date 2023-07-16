@@ -13,7 +13,7 @@ collision_mask = 0
 motion_mode = 1
 script = ExtResource("2_xcc00")
 SPEED = 300
-TURN_SPEED = 1.0
+TURN_SPEED = 0.3
 
 [node name="Sprite2D" type="Sprite2D" parent="tank_CharacterBody2D"]
 texture = ExtResource("1_iqj1v")
@@ -26,3 +26,10 @@ shape = SubResource("RectangleShape2D_wdjm4")
 
 [node name="Shoot_Timer" type="Timer" parent="tank_CharacterBody2D"]
 one_shot = true
+
+[node name="Camera2D" type="Camera2D" parent="tank_CharacterBody2D"]
+position = Vector2(600, 0)
+rotation = 1.5708
+scale = Vector2(10, 10)
+ignore_rotation = false
+zoom = Vector2(0.3, 0.3)

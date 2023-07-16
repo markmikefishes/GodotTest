@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://w3lnig2ed46p"]
+[gd_scene load_steps=2 format=3 uid="uid://bsu7dsja7q7nh"]
 
-[ext_resource type="TileSet" uid="uid://bxpdt2tecnqeb" path="res://William/MapTileSet.tres" id="1_d03b5"]
+[ext_resource type="TileSet" uid="uid://cy4l2p4tjdfbf" path="res://William/MapTileSet.tres" id="1_d03b5"]
 
 [node name="Node2D" type="Node2D"]
 
