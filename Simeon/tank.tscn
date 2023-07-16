@@ -6,16 +6,23 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wdjm4"]
 size = Vector2(320, 200)
 
-[node name="Node2D" type="Node2D"]
+[node name="tank" type="Node2D"]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+[node name="tank_CharacterBody2D" type="CharacterBody2D" parent="."]
+collision_mask = 0
 motion_mode = 1
 script = ExtResource("2_xcc00")
 SPEED = 300
 TURN_SPEED = 1.0
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+[node name="Sprite2D" type="Sprite2D" parent="tank_CharacterBody2D"]
 texture = ExtResource("1_iqj1v")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+[node name="Marker2D" type="Marker2D" parent="tank_CharacterBody2D/Sprite2D"]
+position = Vector2(160, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tank_CharacterBody2D"]
 shape = SubResource("RectangleShape2D_wdjm4")
+
+[node name="Shoot_Timer" type="Timer" parent="tank_CharacterBody2D"]
+one_shot = true
