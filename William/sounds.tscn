@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjw1sy3xtgnau"]
+
+[ext_resource type="AudioStream" uid="uid://bu4siippu2jf1" path="res://William/Music-sfx/15-seconds-2020-04-24_-_Low_Key_-_FesliyanStudios.com_-_David_Renda.mp3" id="1_f1itx"]
+
+[node name="Sounds" type="Node2D"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_f1itx")
+autoplay = true

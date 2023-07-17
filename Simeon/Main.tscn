@@ -1,10 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://cfyv0n53dv5yd"]
+[gd_scene load_steps=4 format=3 uid="uid://cfyv0n53dv5yd"]
 
 [ext_resource type="PackedScene" uid="uid://bsu7dsja7q7nh" path="res://William/Map.tscn" id="1_5xxbi"]
 [ext_resource type="PackedScene" uid="uid://oxpir8w37d2r" path="res://Simeon/tank.tscn" id="2_ii704"]
+[ext_resource type="PackedScene" uid="uid://cjw1sy3xtgnau" path="res://William/sounds.tscn" id="3_6wjhc"]
 
 [node name="Main" type="Node2D"]
 
 [node name="Node2D" parent="." instance=ExtResource("1_5xxbi")]
 
 [node name="tank" parent="." instance=ExtResource("2_ii704")]
+
+[node name="Sounds" parent="." instance=ExtResource("3_6wjhc")]
